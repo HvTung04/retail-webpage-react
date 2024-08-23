@@ -48,7 +48,7 @@ const ContactForm = () => {
         LIÊN HỆ VỚI CHÚNG TÔI
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between p-4 md:max-w mx-auto">
-        <p className="text-gray-500 my-4 md:w-1/3">
+        <p className="text-gray-800 my-4 md:w-1/3">
           Hãy điền thông tin của bạn và liên lạc với chúng tôi ngay để được nhận
           trợ giúp về dịch vụ và sản phẩm của Inox An Thuận Phát.{" "}
         </p>
@@ -84,10 +84,13 @@ const ContactForm = () => {
               className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
               required
             ></textarea>
-          </div>
-          <button className="w-full bg-yellow-400 text-black font-bold py-2 px-4 rounded hover:bg-yellow-500 transition-colors duration-300">
+          </div >
+          <div className="w-full flex justify-center">
+             <button className="w-[200px] bg-yellow-300 text-white font-bold py-2 px-4 rounded hover:bg-yellow-500 transition-colors duration-300">
             Gửi
           </button>
+          </div>
+         
         </form>
       </div>
     </div>

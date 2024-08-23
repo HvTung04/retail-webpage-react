@@ -81,7 +81,6 @@ const ServiceSlider = () => {
     }
     setDotIndex((prevIndex) => (prevIndex + 1) % numberOfDots);
   };
-  console.log(currentIndex);
 
   const handlePrev = () => {
     if (currentIndex === 0) {
@@ -127,17 +126,23 @@ const ServiceSlider = () => {
     }
   }, [handleWheelEvent]);
 
+  if (isLoading) {
+    return (
+      <div className="text-center text-3xl font-bold mt-5">Loading...</div>
+    );
+  }
+
   return (
-    <div className="relative w-full"><div className="bg-[#fbf284] text-black text-center py-2 text-xl font-bold">
-          DỊCH VỤ
-        </div>
+    <div className="relative w-full">
+      <div className="bg-[#fbf284] text-black text-center py-2 text-xl font-bold">
+        DỊCH VỤ
+      </div>
       <div
         className="slider w-full mx-auto overflow-hidden pt-10"
         onWheel={handleWheelEvent}
         onMouseEnter={() => setIsMouseOver(true)}
         onMouseLeave={() => setIsMouseOver(false)}
       >
-        
         <div
           className="flex transition-transform duration-500 ease-in-out pb-10"
           style={{
