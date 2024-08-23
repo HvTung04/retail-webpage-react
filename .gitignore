@@ -27,5 +27,6 @@ src/assets
 src/firebaseConfig.js
 src/globalData.js
 firebase.json
-
+.firebaserc
+.firebase
 public/assets
