@@ -134,15 +134,16 @@ const ProductSlider = () => {
 
   return (
     <div className="relative w-full">
+      <div className="bg-[#fbf284] text-black text-center py-2 text-xl font-bold">
+          SẢN PHẨM
+        </div>
       <div
-        className="slider max-w-5xl mx-auto overflow-hidden pt-10"
+        className="slider w-full mx-auto overflow-hidden pt-10"
         onWheel={handleWheelEvent}
         onMouseEnter={() => setIsMouseOver(true)}
         onMouseLeave={() => setIsMouseOver(false)}
       >
-        <div className="bg-[#fbf284] text-black text-center py-5 text-3xl font-bold">
-          SẢN PHẨM
-        </div>
+        
         <div
           className="flex transition-transform duration-500 ease-in-out pb-10"
           style={{
