@@ -5,11 +5,11 @@ import "./Header.css"
 
 function Header() {
   return (
-    <header className="bg-gray-100 p-4 border-b border-gray-300">
+    <header className="bg-gray-100 border-b border-gray-300">
       <div className="font-manrope container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Logo Section */}
         <Link to="/" className="flex items-center mb-4 md:mb-0">
-          <div className="md:ml-20 flex flex-col items-center">
+          <div className="flex flex-col items-center">
             <img src={logo} alt="Logo" className="h-20" />
             <h1 className="md:text-xl font-bold text-yellow-400 font-montserrat">INOX AN THUẬN PHÁT</h1>
           </div>
@@ -23,17 +23,17 @@ function Header() {
         </div>
 
         {/* Navigation Section */}
-        <nav className="font-montserrat font-bold md:ml-5 text-sm flex md:text-lg lg:mr-20 md:flex-row lg:space-x-10 space-x-4"> {/* Added space between links */}
-          <Link className="hover:text-red-600 hover:font-semibold" to="/about">
+        <nav className="font-montserrat font-bold md:ml-5 text-sm flex md:text-xl lg:mr-20 md:flex-row lg:space-x-20 space-x-4"> {/* Added space between links */}
+          <Link className="hover:text-red-600" to="/about">
             GIỚI THIỆU
           </Link>
-          <Link className="hover:text-red-600 hover:font-semibold" to="/products">
+          <Link className="hover:text-red-600" to="/products">
             SẢN PHẨM
           </Link>
-          <Link className="hover:text-red-600 hover:font-semibold" to="/services">
+          <Link className="hover:text-red-600" to="/services">
             DỊCH VỤ
           </Link>
-          <Link className="hover:text-red-600 hover:font-semibold" to="/contact">
+          <Link className="hover:text-red-600" to="/contact">
             TƯ VẤN
           </Link>
         </nav>
