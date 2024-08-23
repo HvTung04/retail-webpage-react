@@ -1,0 +1,20 @@
+.rgb-pulse {
+    animation: yellowToBlackPulse 3s infinite alternate;
+}
+
+@keyframes yellowToBlackPulse {
+    0% {
+        color: #c5c58f; /* Yellow */
+        text-shadow: 0 0 5px #d3d39d, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
+    }
+
+    100% {
+        color: #a1b366; /* Black */
+        text-shadow: 0 0 5px #524343, 0 0 10px #5f5252, 0 0 15px #635b5b, 0 0 20px #000000;
+    }
+}
+
+.gradient-line {
+    height: 2px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(128, 128, 128, 1), rgba(0, 0, 0, 0));
+}

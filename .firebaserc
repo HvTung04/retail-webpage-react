@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "inox-anthuanphat",
+    "deploying": "inox-anthuanphat"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
