@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useEffect } from "react";
-import ProductCard from "../components/ProductCard";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { db } from "../firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
+import ServiceCard from "./ServiceCard";
 
 const debounce = (func, wait) => {
   let timeout;
@@ -157,7 +157,7 @@ const ServiceSlider = () => {
               className="w-full flex-shrink-0 px-2"
               style={{ flex: `0 0 ${100 / visibleServices}%` }}
             >
-              <ProductCard product={service} />
+              <ServiceCard product={service} />
             </div>
           ))}
         </div>

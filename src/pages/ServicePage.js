@@ -50,7 +50,7 @@ const ServicePage = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className=" text-4xl font-bold text-center mb-4">{product.name}</h1>
+      {/* <h1 className=" text-4xl font-bold text-center mb-4">{product.name}</h1> */}
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="flex flex-col items-center md:w-1/2">
           <img 
@@ -70,11 +70,11 @@ const ServicePage = () => {
             ))}
           </div>
         </div>
-        <div className="md:w-1/2 md:pl-8">
-          <h2 className="text-2xl font-bold mb-4">Miêu tả</h2>
-          <p className="text-gray-600 mb-4">{product.description}</p>
-          <h2 className="text-2xl font-bold mb-4">Chi tiết</h2>
+        <div className="md:w-1/2 md:pl-8 mt-[100px]">
+          <h2 className="text-4xl font-bold mb-4 text-center">{product.name}</h2>
           <p className="leading-relaxed text-gray-600">{product.detail}</p>
+          <h2 className="text-2xl font-bold mb-4">Thông số:</h2>
+          <p className="ml-10 leading-relaxed text-gray-600">{product.description}</p>
         </div>
       </div>
     </div>
