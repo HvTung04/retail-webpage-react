@@ -4,7 +4,7 @@ import { FaAddressCard } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-[#fff463] text-black py-2">
+    <footer className="bg-[#a6a6a6] text-black py-2">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
         {/* Contact Section */}
         <div className="w-full md:pt-0 space-y-1">

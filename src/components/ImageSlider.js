@@ -19,7 +19,7 @@ function ImageSlider() {
   }, []);
 
   return (
-    <div className="relative w-full mb-12" style={{ height: 'calc(100vw * 9 / 16)' }}>
+    <div className="relative w-full mb-12" style={{ height: 'calc((100vw * 9 / 16)/2)' }}>
       {images.map((image, index) => (
         <div
           key={index}
@@ -30,7 +30,7 @@ function ImageSlider() {
           <img
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover"
           />
         </div>
       ))}

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import ImageSlider from "../components/ImageSlider";
 import { useLocation } from "react-router-dom";
+import banner from "../assets/banner.png";
 import ProductSlider from "../components/ProductSlider";
 import ServiceSlider from "../components/ServiceSlider";
 
@@ -17,11 +18,21 @@ function Home() {
   }, [location]);
 
   return (
-    <div className="container mx-auto p-4">
+    <div>
       <ImageSlider />
-      <div id="products-section"><ProductSlider /></div>
-      <div id="services-section"><ServiceSlider /></div>
-      <img src="https://inox-anthuanphat.web.app/assets/display-imgs/display2.jpeg" alt="About Us" className="max-w-full h-auto rounded-lg shadow-lg"/>
+      <div className="container mx-auto p-4">
+        <div id="products-section">
+          <ProductSlider />
+        </div>
+        <div id="services-section">
+          <ServiceSlider />
+        </div>
+      </div>
+      <img
+        src={banner}
+        alt="About Us"
+        className="p-0 w-full h-auto shadow-lg mb-10"
+      />
     </div>
   );
 }

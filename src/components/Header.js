@@ -11,7 +11,7 @@ function Header() {
         <Link to="/" className="flex items-center mb-4 md:mb-0">
           <div className="flex flex-col items-center">
             <img src={logo} alt="Logo" className="h-20" />
-            <h1 className="md:text-xl font-bold text-yellow-400 font-montserrat">INOX AN THUẬN PHÁT</h1>
+            <h1 className="md:text-xl font-bold text-[#574b4b] font-montserrat">INOX AN THUẬN PHÁT</h1>
           </div>
         </Link>
 

@@ -134,7 +134,7 @@ const ServiceSlider = () => {
 
   return (
     <div className="relative w-full">
-      <div className="bg-[#fbf284] text-black text-center py-2 text-xl font-bold">
+      <div className="bg-[#a6a6a6] text-black text-center py-2 text-xl font-bold">
         DỊCH VỤ
       </div>
       <div
@@ -162,13 +162,13 @@ const ServiceSlider = () => {
           ))}
         </div>
         <button
-          className="absolute top-1/2 transform -translate-y-1/2 left-0 p-2 text-white bg-gray-800 rounded-full"
+          className="absolute top-1/2 transform -translate-y-1/2 left-0 p-2 text-white bg-gray-400 rounded-full"
           onClick={handlePrev}
         >
           <FaArrowLeft />
         </button>
         <button
-          className="absolute top-1/2 transform -translate-y-1/2 right-0 p-2 text-white bg-gray-800 rounded-full"
+          className="absolute top-1/2 transform -translate-y-1/2 right-0 p-2 text-white bg-gray-400 rounded-full"
           onClick={handleNext}
         >
           <FaArrowRight />

@@ -70,7 +70,7 @@ const ProductPages = () => {
 
   return (
     <div className="relative w-full">
-      <div className="font-manrope bg-[#fbf284] text-black text-center py-5 text-3xl font-bold">
+      <div className="font-manrope bg-[#a6a6a6] text-black text-center py-5 text-3xl font-bold">
         SẢN PHẨM
       </div>
       <div className="w-full mx-auto overflow-hidden pt-10">

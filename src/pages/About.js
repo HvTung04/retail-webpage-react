@@ -4,7 +4,7 @@ import image from '../assets/display-imgs/company.jpg'
 const About = () => {
   return (
     <div>
-       <div className="relative w-full font-manrope bg-[#fbf284] text-black text-center py-5 text-3xl font-bold">
+       <div className="relative w-full font-manrope bg-[#a6a6a6] text-black text-center py-5 text-3xl font-bold">
         VỀ CHÚNG TÔI
       </div>
     <div className="flex flex-wrap md:flex-nowrap justify-center items-center p-4 gap-4">

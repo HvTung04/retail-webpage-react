@@ -86,7 +86,7 @@ const ContactForm = () => {
             ></textarea>
           </div >
           <div className="w-full flex justify-center">
-             <button className="w-[200px] bg-yellow-300 text-white font-bold py-2 px-4 rounded hover:bg-yellow-500 transition-colors duration-300">
+             <button className="w-[200px] bg-gray-300 text-white font-bold py-2 px-4 rounded hover:bg-gray-500 transition-colors duration-300">
             Gửi
           </button>
           </div>
