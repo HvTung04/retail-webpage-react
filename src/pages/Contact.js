@@ -21,10 +21,10 @@ const ContactForm = () => {
 
     emailjs
       .send(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         formData,
-        process.env.EMAILJS_USER_ID
+        EMAILJS_USER_ID
       )
       .then(
         (result) => {
@@ -41,6 +41,7 @@ const ContactForm = () => {
       message: "",
     });
   };
+
 
   return (
     <div className="relative w-full">
@@ -86,7 +87,7 @@ const ContactForm = () => {
             ></textarea>
           </div >
           <div className="w-full flex justify-center">
-             <button className="w-[200px] bg-gray-300 text-white font-bold py-2 px-4 rounded hover:bg-gray-500 transition-colors duration-300">
+             <button className="w-[200px] bg-gray-800 text-white font-bold py-2 px-4 rounded hover:bg-gray-500 transition-colors duration-300">
             Gửi
           </button>
           </div>

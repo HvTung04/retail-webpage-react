@@ -25,7 +25,7 @@ const ProductCard = ({ product, width = 'w-full', height = 'h-64' }) => {
 
   return (
     <div 
-      className={`border p-4 rounded-lg hover:shadow-lg transition-shadow duration-300 cursor-pointer transform hover:scale-105 hover:bg-blue-200 ${width}`} 
+      className={`border border-black p-4 rounded-lg hover:shadow-lg transition-shadow duration-300 cursor-pointer transform hover:scale-105 hover:bg-blue-200 ${width}`} 
       onClick={navigateToProductPage}
       style={{ maxWidth: width, maxHeight: height, height: height }} // Use inline styles for max dimensions
     >
